@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alquimia.Literaria - Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    :root {
+      --color-primario: #34495E;
+      --color-secundario: #E5D7B9;
+      --color-fondo: #34495E;
+      --color-gris: #C9A646;
+    }
+  </style>
+</head>
+<body class="bg-[var(--color-primario)] text-[var(--color-secundario)] overflow-x-hidden pb-20">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full px-6 py-4 bg-[var(--color-primario)] flex justify-between items-center shadow-md z-50">
+  <a href="#" class="text-2xl font-extrabold text-[var(--color-secundario)] hover:scale-110 transition-transform">
+    Alquimia.Literaria
+  </a>
+  <nav class="hidden md:flex">
+    <a href="#" class="text-lg mx-4 text-[var(--color-secundario)] border-b-2 border-[var(--color-secundario)]">Inicio</a>
+    <a href="#libreria" class="text-lg mx-4 hover:text-[var(--color-secundario)] hover:border-b-2 border-[var(--color-secundario)] transition-all">Librería</a>
+    <a href="#prestamos" class="text-lg mx-4 hover:text-[var(--color-secundario)] hover:border-b-2 border-[var(--color-secundario)] transition-all">Préstamos</a>
+  </nav>
+  <div class="hidden md:flex items-center space-x-1">
+    <input type="search" placeholder="Buscar..." class="px-5 py-1 rounded-l-md border border-r-0 border-[var(--color-secundario)] focus:outline-none focus:ring-2 focus:ring-[var(--color-secundario)]" />
+    <button class="bg-[var(--color-secundario)] text-[var(--color-primario)] px-6 py-1 rounded-r-md font-semibold hover:bg-[var(--color-fondo)] transition">Buscar</button>
+  </div>
+  <div class="hidden md:flex space-x-2">
+    <button class="bg-white text-[var(--color-primario)] px-3 py-1 rounded-lg font-semibold hover:bg-gray-100">Iniciar sesión</button>
+    <button class="bg-[var(--color-secundario)] text-[var(--color-primario)] px-3 py-1 rounded-lg font-semibold hover:bg-[var(--color-fondo)]">Registrarse</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="pt-28 px-6 md:px-20 flex flex-col md:flex-row items-center justify-center gap-12 min-h-screen bg-gradient-to-b from-white to-[var(--color-fondo)]">
+  <div class="flex justify-center flex-1">
+    <img src="./img/log/1ff1767c-c0e9-4f50-886b-c5c8ab1a09f6.png" alt="Logo Alquimia" class="rounded-full max-w-xs shadow-lg hover:shadow-[0_0_40px_var(--color-secundario)] transition-shadow duration-300" />
+  </div>
+  <div class="flex-1 max-w-xl">
+    <h1 class="text-5xl font-bold leading-tight text-[var(--color-primario)]">
+      Descubre, escucha y vive la magia de los libros.
+    </h1>
+    <p class="mt-6 text-lg leading-relaxed text-[var(--color-secundario)]">
+      Alquimia.Literaria es tu portal para explorar libros, cómics, mangas y audiolibros, conocer a sus autores y sumergirte en mundos llenos de historias.
+    </p>
+    <a href="#quienes-somos" class="inline-block mt-8 px-7 py-3 border-2 border-[var(--color-secundario)] rounded-full text-[var(--color-secundario)] font-semibold hover:bg-[var(--color-secundario)] hover:text-[var(--color-primario)] transition hover:scale-105 shadow-lg">
+      Explorar
+    </a>
+  </div>
+</section>
+
+<!-- QUIÉNES SOMOS -->
+<section id="quienes-somos" class="px-6 mt-20 md:px-20">
+  <div class="max-w-5xl mx-auto bg-white border-2 border-[var(--color-primario)] rounded-lg p-8 shadow-lg flex flex-col md:flex-row gap-12">
+    <div class="flex-1">
+      <h2 class="text-4xl font-bold mb-4 text-[var(--color-primario)]">¿Qué es Alquimia.Literaria?</h2>
+      <p class="leading-relaxed">
+        Somos una plataforma que conecta lectores con historias. Ofrecemos libros, cómics, mangas y audiolibros, así como reseñas y biografías de autores para inspirarte.
+      </p>
+      <form class="mt-6 flex flex-col space-y-4">
+        <input type="text" placeholder="Tu nombre" class="border p-2 rounded-lg">
+        <input type="email" placeholder="Tu correo" class="border p-2 rounded-lg">
+        <textarea placeholder="Tu mensaje" class="border p-2 rounded-lg"></textarea>
+        <button class="bg-[var(--color-primario)] text-[var(--color-secundario)] py-2 rounded-lg hover:bg-gray-900">Enviar</button>
+      </form>
+    </div>
+    <div class="flex-1">
+      <iframe src="https://maps.google.com/maps?q=medellin&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-80 rounded-lg border-4 border-[var(--color-secundario)]"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="px-4 py-12 bg--[var(--color-secundario)] md:px-12 lg:px-20">
+  <h2 class="text-2xl md:text-3xl font-bold text-center text-[var(--color-primario)] mb-10">Características</h2>
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <div class="flex flex-col items-center text-center p-6 border rounded-2xl shadow transition hover:bg-gradient-to-br hover:from-[var(--color-secundario)] hover:to-yellow-200">
+      <img src="./img/iconos cta/libro-abierto-4868349-4061801.png" class="w-16 h-16 mb-4" alt="Icono 1">
+      <h3 class="font-semibold text-lg">Variedad de géneros</h3>
+      <p class="text-[var(--color-gris)] mt-2 text-sm">Libros, cómics, mangas y más.</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 border rounded-2xl shadow transition hover:bg-gradient-to-br hover:from-[var(--color-secundario)] hover:to-yellow-200">
+      <img src="./img/iconos cta/female-artist-type-1-2-78.png" class="w-16 h-16 mb-4" alt="Icono 2">
+      <h3 class="font-semibold text-lg">Autores destacados</h3>
+      <p class="text-[var(--color-gris)] mt-2 text-sm">Conoce su vida y obras.</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 border rounded-2xl shadow transition hover:bg-gradient-to-br hover:from-[var(--color-secundario)] hover:to-yellow-200">
+      <img src="./img/iconos cta/3d-loundspeaker-megaphone-free-png.webp" class="w-16 h-16 mb-4" alt="Icono 3">
+      <h3 class="font-semibold text-lg">Audiolibros</h3>
+      <p class="text-[var(--color-gris)] mt-2 text-sm">Historias para escuchar en cualquier lugar.</p>
+    </div>
+    <div class="flex flex-col items-center text-center p-6 border rounded-2xl shadow transition hover:bg-gradient-to-br hover:from-[var(--color-secundario)] hover:to-yellow-200">
+      <img src="./img/iconos cta/1f4b8_color.png" class="w-16 h-16 mb-4" alt="Icono 4">
+      <h3 class="font-semibold text-lg">Préstamos</h3>
+      <p class="text-[var(--color-gris)] mt-2 text-sm">Facilitamos el acceso a la lectura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-gradient-to-r from-[var(--color-primario)] to-gray-700 py-16 px-6 md:px-20 text-white text-center rounded-3xl shadow-xl mx-4 my-10">
+  <h2 class="mb-4 text-3xl font-bold md:text-4xl">Conviértete en parte de nuestra comunidad lectora</h2>
+  <p class="text-lg md:text-xl text-gray-200 mb-8">
+    Únete a <span class="font-semibold">Alquimia.Literaria</span> hoy y empieza a transformar tus días con historias.
+  </p>
+  <div class="flex flex-col justify-center gap-4 sm:flex-row">
+    <a href="#libreria" class="inline-flex items-center justify-center gap-2 bg-[var(--color-secundario)] text-[var(--color-primario)] font-bold py-3 px-6 rounded-full text-lg shadow hover:shadow-lg hover:bg-yellow-500 transition-transform transform hover:scale-105">
+      📚 Ver Librería
+    </a>
+    <a href="#registro" class="inline-flex items-center justify-center gap-2 bg-white text-[var(--color-primario)] font-bold py-3 px-6 rounded-full text-lg shadow hover:shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105">
+      ✍️ Crear cuenta
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-gray-600 body-font bg-white">
+  <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+    <div class="flex-shrink-0 w-64 mx-auto mt-10 text-center md:mx-0 md:text-left md:mt-0">
+      <a href="#" class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+        <img src="./img/log/1ff1767c-c0e9-4f50-886b-c5c8ab1a09f6.png" alt="Logo Alquimia" class="w-20 h-20 p-1 rounded-full">
+        <span class="ml-3 text-xl">Alquimia.Literaria</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">Convierte palabras en mundos, y mundos en alquimia.</p>
+    </div>
+    <div class="flex flex-wrap flex-grow order-first -mb-10 text-center md:pr-20 md:text-left">
+      <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+        <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 title-font">Explora</h2>
+        <nav class="mb-10 list-none">
+          <li><a href="#" class="text-gray-600 hover:text-gray-800">Inicio</a></li>
+          <li><a href="#quienes-somos" class="text-gray-600 hover:text-gray-800">Quiénes Somos</a></li>
+          <li><a href="#libreria" class="text-gray-600 hover:text-gray-800">Librería</a></li>
+          <li><a href="#prestamos" class="text-gray-600 hover:text-gray-800">Préstamos</a></li>
+          <li><a href="#contacto" class="text-gray-600 hover:text-gray-800">Contacto</a></li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+      <p class="text-sm text-center text-gray-500 sm:text-left">© 2025 Alquimia.Literaria · Todos los derechos reservados
+        <a href="#" class="text-[var(--color-secundario)] ml-1">Política de privacidad || Términos y condiciones</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bottom Bar para móviles -->
+    <div
+      class="md:hidden fixed bottom-0 left-0 w-full bg-[var(--color-primario)] border-t-2 border-[var(--color-dos)] flex justify-around py-2 z-50 shadow-lg"
+    >
+      <a href="Uniforme_tailwin.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-house"></i> Inicio
+      </a>
+      <a href="catalogo.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Catalogo
+      </a>
+            <a href="donar.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Donar
+      </a>
+            <a href="reparar.html" class="flex flex-col items-center text-[var(--color-dos)] text-sm font-semibold hover:text-white transition">
+        <i class="text-lg fa-solid fa-envelope"></i> Reparar
+      </a>
+    </div>
+
+</body>
+</html>
